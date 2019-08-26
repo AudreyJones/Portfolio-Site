@@ -15,7 +15,7 @@ class HomePage extends Component {
                 </Carousel>
                 <Jumbotron>
                     <h1>Inquires about Contract Work?</h1>
-                    <p>Click the above Contact button to access my contact information. I am available by phone, email, Zoom, and Skype!</p>
+                    <p>Click the Contact button to access my contact information. I am available by phone, email, Zoom, and Skype!</p>
                 </Jumbotron>
             </div>
 
