@@ -5,6 +5,7 @@ class AboutPage extends Component {
         return(
             <div>
                 <h1>About Page</h1>
+                <p>About Page Example Paragraph taking up space!!!!!!!!!!!</p>
             </div>
 
         )
