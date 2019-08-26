@@ -5,10 +5,10 @@ import { LinkContainer } from 'react-router-bootstrap'
 class ContactPage extends Component {
     render() {
         return(
-            <div>
+            <React.Fragment>
                 <h1>Contact Me</h1>
                 <Jumbotron>
-                    <h1></h1>
+                    <h1>Thing</h1>
                     <Tab.Container>
                         <Row>
                             <Col sm={2}>
@@ -35,8 +35,7 @@ class ContactPage extends Component {
                     </Tab.Container>
                 </Jumbotron>
 
-            </div>
-
+            </React.Fragment>
         )
     }
 
