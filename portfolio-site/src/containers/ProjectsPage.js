@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Card, CardDeck, Button, ButtonGroup } from 'react-bootstrap'
 import Logo from '../logo192.png'
+import AdventureApp from '../images/AdventureApp.png'
 
 
 class ProjectsPage extends Component {
@@ -25,7 +26,7 @@ class ProjectsPage extends Component {
                     </Card>
 
                     <Card style={{ width: '18vw' }}>
-                        <Card.Img variant="top" src={Logo} alt="Logo"/>
+                        <Card.Img variant="top" src={AdventureApp} alt="Logo" thumbnail/>
                         <Card.Body>
                             <Card.Title>AdventureApp</Card.Title>
                             <Card.Text>Go on an adventure starring you as a hero! Join villains on adventures for different popular Franchises, including Harry Potter, Star Wars, and the Marvel Cinematic Universe!</Card.Text>
