@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {BrowserRouter as Router, Route, Link, Switch} from 'react-router-dom';
-// import logo from './logo.svg';
+import logo from './logo.svg';
 import './App.css';
 import HomePage from './containers/HomePage.js'
 import AboutPage from './containers/AboutPage.js'
@@ -44,6 +44,7 @@ class App extends Component {
               </Nav>
         
               </Col>
+              
               <Col sm={9}>
               
                 <Tab.Content>
@@ -60,13 +61,14 @@ class App extends Component {
                   </Tab.Pane>
                   
                   <Tab.Pane eventKey="contact">
-                    {/* <ContactPage /> */}
+                    <ContactPage />
                   </Tab.Pane>
                 </Tab.Content>
                 
               </Col>
             </Row>
           </Tab.Container> 
+          
         </Router>
     );
   }

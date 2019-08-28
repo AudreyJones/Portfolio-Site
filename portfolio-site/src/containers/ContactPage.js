@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import { Button, ListGroup, Jumbotron, Nav, Tab, Col, Row } from 'react-bootstrap'
-import { LinkContainer } from 'react-router-bootstrap'
+// import { Button, ListGroup, Jumbotron, Nav, Tab, Col, Row } from 'react-bootstrap'
+// import { LinkContainer } from 'react-router-bootstrap'
 
 class ContactPage extends Component {
     render() {
         return(
-            <React.Fragment>
+            {/* <React.Fragment>
                 <h1>Contact Me</h1>
                 <Jumbotron>
                     <h1>Thing</h1>
@@ -30,7 +30,7 @@ class ContactPage extends Component {
                     </Tab.Container>
                 </Jumbotron>
 
-            </React.Fragment>
+            </React.Fragment> */}
         )
     }
 
