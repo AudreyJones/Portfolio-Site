@@ -17,11 +17,6 @@ class ContactPage extends Component {
                                     <LinkContainer to="/home">
                                     </LinkContainer>
                                 </Nav.Item>
-                                {/* <ListGroup>
-                                    <ListGroup.Item>Github</ListGroup.Item>
-                                    <ListGroup.Item>LinkedIn</ListGroup.Item>
-                                    <ListGroup.Item>Medium</ListGroup.Item>
-                                </ListGroup> */}
                             </Nav>
                             </Col>
                             <Col sm={9}>

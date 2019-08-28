@@ -58,7 +58,7 @@ class App extends Component {
                   <Tab.Pane eventKey="projects">
                     <ProjectsPage />
                   </Tab.Pane>
-
+                  
                   <Tab.Pane eventKey="contact">
                     {/* <ContactPage /> */}
                   </Tab.Pane>
