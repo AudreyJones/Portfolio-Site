@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
-import {BrowserRouter as Router, Route, Link, Switch} from 'react-router-dom';
-import logo from './logo.svg';
+import {BrowserRouter as Router} from 'react-router-dom';
 import './App.css';
 import HomePage from './containers/HomePage.js'
 import AboutPage from './containers/AboutPage.js'
@@ -8,6 +7,7 @@ import ProjectsPage from './containers/ProjectsPage.js'
 import ContactPage from './containers/ContactPage.js'
 import { Nav, Tab, Row, Col, Button } from 'react-bootstrap';
 import { LinkContainer } from 'react-router-bootstrap'
+
 
 class App extends Component {
   render() {
@@ -45,6 +45,7 @@ class App extends Component {
         
               </Col>
               
+              {/* Main Section: */}
               <Col sm={9}>
               
                 <Tab.Content>
@@ -60,12 +61,14 @@ class App extends Component {
                     <ProjectsPage />
                   </Tab.Pane>
                   
-                  <Tab.Pane eventKey="contact">
+                  {/* <Tab.Pane eventKey="contact">
                     <ContactPage />
-                  </Tab.Pane>
+                  </Tab.Pane> */}
                 </Tab.Content>
                 
               </Col>
+              Here I am!
+              
             </Row>
           </Tab.Container> 
           
