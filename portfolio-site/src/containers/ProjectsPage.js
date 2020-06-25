@@ -7,7 +7,7 @@ import AdventureApp from '../images/AdventureApp.png'
 class ProjectsPage extends Component {
     render() {
         return(
-            <div>
+            <div class="margin-box">
                 <h1>Projects</h1>
                     <CardDeck>
                     <Card style={{ width: '18vw' }}>
