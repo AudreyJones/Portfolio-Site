@@ -33,13 +33,13 @@ class App extends Component {
                   </LinkContainer>
                 </Nav.Item>
 
-                <Nav.Item variant="primary">
+                {/* <Nav.Item variant="primary">
                   <LinkContainer to="/projects">
                     <Nav.Link eventKey="projects" href="/projects">
                       Projects
                     </Nav.Link>
                   </LinkContainer>
-                </Nav.Item>
+                </Nav.Item> */}
 
                 <Nav.Item variant="primary">
                   <LinkContainer to="/contact">

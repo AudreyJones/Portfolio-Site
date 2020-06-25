@@ -12,7 +12,7 @@ class HomePage extends Component {
         <CardGroup>
           <Row>
             <Col sm>
-              <Card className="projects">
+              <Card className="project">
                 <Card.Img
                   src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Test.png"
                   alt="Card image"
@@ -23,7 +23,7 @@ class HomePage extends Component {
               </Card>
             </Col>
             <Col sm>
-              <Card className="projects">
+              <Card className="project">
                 <Card.Img
                   src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Test.png"
                   alt="Card image"
@@ -34,7 +34,7 @@ class HomePage extends Component {
               </Card>
             </Col>
             <Col sm>
-              <Card className="projects">
+              <Card className="project">
                 <Card.Img
                   src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Test.png"
                   alt="Card image"
@@ -45,7 +45,7 @@ class HomePage extends Component {
               </Card>
             </Col>
           </Row>
-          <Card className="projects">
+          <Card className="project">
             <Card.Img
               src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Test.png"
               alt="Card image"
@@ -54,7 +54,7 @@ class HomePage extends Component {
               <Card.Title>Project</Card.Title>
             </Card.ImgOverlay>
           </Card>
-          <Card className="projects">
+          <Card className="project">
             <Card.Img
               src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Test.png"
               alt="Card image"
@@ -63,7 +63,7 @@ class HomePage extends Component {
               <Card.Title>Project</Card.Title>
             </Card.ImgOverlay>
           </Card>
-          <Card className="projects">
+          <Card className="project">
             <Card.Img
               src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Test.png"
               alt="Card image"
