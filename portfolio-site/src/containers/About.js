@@ -1,11 +1,11 @@
 import React, { Component } from "react";
-import { Media, Image } from "react-bootstrap";
+import { Media, Image, Container } from "react-bootstrap";
 import Profile from "../images/Profile.jpg";
 
 class About extends Component {
   render() {
     return (
-      <div class="margin-box">
+      <Container fluid>
         <Media>
           <Image
             height="200"
@@ -37,7 +37,7 @@ class About extends Component {
             </p>
           </Media.Body>
         </Media>
-      </div>
+      </Container>
     );
   }
 }

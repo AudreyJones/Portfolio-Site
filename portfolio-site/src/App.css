@@ -10,6 +10,21 @@ body {
   /* align-items: center; */
 }
 
+.container-fluid {
+  background-color: #defff7;
+  color: #4d4d4d;
+}
+
+.img-fluid {
+  margin: 0;
+  padding: 2%;
+  border: none;
+}
+
+.svg-inline {
+  padding: 2%;
+}
+
 .media {
   background-color: #defff7;
   color: #4d4d4d;
@@ -92,4 +107,17 @@ div#margin-box .media-body {
   margin: 0;
   padding: 2%;
   border: 0;
+}
+
+#footer.container-fluid {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #defff7;
+  color: #4d4d4d;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  border: none;
 }

@@ -4,14 +4,18 @@ import "./App.css";
 import HomePage from "./containers/HomePage.js";
 import About from "./containers/About.js";
 import ProjectsPage from "./containers/ProjectsPage.js";
-import Contact from "./containers/Contact.js";
-import { Nav, Tab, Row, Col, Button } from "react-bootstrap";
+import ContactPage from "./containers/ContactPage.js";
+import ResumePage from "./containers/ResumePage.js";
+import { Nav, Tab, Row, Col, Container } from "react-bootstrap";
 import { LinkContainer } from "react-router-bootstrap";
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 class App extends Component {
   render() {
     return (
       <Router>
+        {/* Navbar */}
         <Tab.Container id="left-tabs" defaultActiveKey="home">
           <Row>
             <Col sm={2}>
@@ -34,9 +38,9 @@ class App extends Component {
                 </Nav.Item>
 
                 <Nav.Item variant="primary">
-                  <LinkContainer to="/projects">
-                    <Nav.Link eventKey="projects" href="/projects">
-                      Projects
+                  <LinkContainer to="/resume">
+                    <Nav.Link eventKey="resume" href="/resume">
+                      Resume
                     </Nav.Link>
                   </LinkContainer>
                 </Nav.Item>
@@ -66,13 +70,24 @@ class App extends Component {
                   <ProjectsPage />
                 </Tab.Pane>
 
-                {/* <Tab.Pane eventKey="contact">
-                        <Contact />
-                      </Tab.Pane> */}
+                <Tab.Pane eventKey="resume">
+                  <ResumePage />
+                </Tab.Pane>
+                <Tab.Pane eventKey="contact">
+                  <ContactPage />
+                </Tab.Pane>
               </Tab.Content>
             </Col>
           </Row>
         </Tab.Container>
+        <Container id="footer" fluid>
+          Audrey Jones &#169; 2020 | Made with Lo&hearts;e &{" "}
+          <FontAwesomeIcon icon="coffee" />
+          |
+          <FontAwesomeIcon icon={["fab", "github"]} size="md" />
+          <FontAwesomeIcon icon={["fab", "medium"]} size="md" />
+          <FontAwesomeIcon icon={["fab", "github"]} size="md" />
+        </Container>
       </Router>
     );
   }
