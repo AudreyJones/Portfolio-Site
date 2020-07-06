@@ -19,6 +19,12 @@ body {
   justify-content: center;
 }
 
+.row {
+  margin: 0;
+  padding-bottom: 2%;
+  border: none;
+}
+
 .logo {
   text-align: center;
   font-size: x-large;
@@ -37,9 +43,6 @@ div.jumbotron {
   margin: 0 auto;
   width: 900px;
   justify-content: space-between;
-}
-
-.project.card {
 }
 
 .card-img-overlay {
@@ -62,8 +65,10 @@ div.jumbotron {
 
 .card-title {
   color: #4d4d4d;
-  text-align: justify;
-  padding: 40%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .nav-pills .nav-item .active.nav-link.active {
