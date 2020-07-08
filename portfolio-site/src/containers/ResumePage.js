@@ -6,7 +6,7 @@ class ResumePage extends Component {
   render() {
     return (
       <Container fluid>
-        <Image src={Resume} alt="my resume" fluid />
+        <Image src={Resume} alt="my resume" fluid rounded />
       </Container>
     );
   }

@@ -14,7 +14,7 @@ class HomePage extends Component {
     return (
       <Container fluid>
         <Jumbotron>
-          <h1>Hi, I'm Audrey Jones!</h1>
+          <h1>Hi, I'm Audrey!</h1>
           <p>Scroll down to see my work</p>
         </Jumbotron>
 

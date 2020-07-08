@@ -19,7 +19,9 @@ class App extends Component {
         <Tab.Container id="left-tabs" defaultActiveKey="home">
           <Row>
             <Col sm={2}>
-              <p class="logo">Audrey Jones</p>
+              <div id="logo">
+                <p>Audrey Jones</p>
+              </div>
               <Nav justify variant="pills" className="flex-column">
                 <Nav.Item variant="primary">
                   <LinkContainer to="/home">
@@ -56,6 +58,7 @@ class App extends Component {
             </Col>
 
             {/* Main Section: */}
+
             <Col sm={9}>
               <Tab.Content id="margin-box">
                 <Tab.Pane eventKey="home">
@@ -82,11 +85,10 @@ class App extends Component {
         </Tab.Container>
         <Container id="footer" fluid>
           Audrey Jones &#169; 2020 | Made with Lo&hearts;e &{" "}
-          <FontAwesomeIcon icon="coffee" />
-          |
-          <FontAwesomeIcon icon={["fab", "github"]} size="md" />
+          <FontAwesomeIcon icon="coffee" /> |{" "}
+          <FontAwesomeIcon icon={["fab", "linkedin"]} size="md" />{" "}
+          <FontAwesomeIcon icon={["fab", "github"]} size="md" />{" "}
           <FontAwesomeIcon icon={["fab", "medium"]} size="md" />
-          <FontAwesomeIcon icon={["fab", "github"]} size="md" />
         </Container>
       </Router>
     );

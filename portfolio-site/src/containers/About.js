@@ -31,10 +31,15 @@ class About extends Component {
               attending GDI events, panels, and classes in HTML, CSS, JS, and
               UX/UI research. There, I learned of coding bootcamps, did my
               research, applied, and got into the Flatiron School's online
-              fullstack engineering program. In my free time I weave (crochet
-              and chain maille), drink way too much cold brew, watch true crime
-              shows, and do aqua fit.
+              fullstack engineering program.
             </p>
+            <p>In my free time I: </p>
+            <ul>
+              <li>weave (crochet and scale/chain maille)</li>
+              <li>drink way too much cold brew coffee</li>
+              <li>watch true crime shows</li>
+              <li> and do aqua fit!</li>
+            </ul>
           </Media.Body>
         </Media>
       </Container>
