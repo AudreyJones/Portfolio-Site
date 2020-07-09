@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Container, Row, Card } from "react-bootstrap";
+import { Container, Row } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 class ContactPage extends Component {

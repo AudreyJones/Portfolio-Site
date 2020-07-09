@@ -6,6 +6,7 @@ import About from "./containers/About.js";
 import ProjectsPage from "./containers/ProjectsPage.js";
 import ContactPage from "./containers/ContactPage.js";
 import ResumePage from "./containers/ResumePage.js";
+import Knitpickr from "./projects/Knitpickr";
 import { Nav, Tab, Row, Col, Container } from "react-bootstrap";
 import { LinkContainer } from "react-router-bootstrap";
 
@@ -65,6 +66,10 @@ class App extends Component {
                   <HomePage />
                 </Tab.Pane>
 
+                {/* <Tab.Pane eventKey="knitpickr">
+                  <Knitpickr />
+                </Tab.Pane> */}
+
                 <Tab.Pane eventKey="about">
                   <About />
                 </Tab.Pane>
@@ -76,6 +81,7 @@ class App extends Component {
                 <Tab.Pane eventKey="resume">
                   <ResumePage />
                 </Tab.Pane>
+
                 <Tab.Pane eventKey="contact">
                   <ContactPage />
                 </Tab.Pane>

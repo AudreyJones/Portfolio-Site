@@ -1,5 +1,9 @@
 import React, { Component } from "react";
+import { BrowserRouter as Router } from "react-router-dom";
+import { LinkContainer } from "react-router-bootstrap";
 import {
+  Nav,
+  Tab,
   Jumbotron,
   Card,
   CardGroup,
@@ -8,6 +12,7 @@ import {
   Container,
 } from "react-bootstrap";
 import Logo from "../images/logo192.png";
+import Knitpickr from "../projects/Knitpickr";
 
 class HomePage extends Component {
   render() {
@@ -24,7 +29,14 @@ class HomePage extends Component {
               <Card className="project">
                 <Card.Img src={Logo} alt="Card image" />
                 <Card.ImgOverlay>
-                  <Card.Title>Knitpickr</Card.Title>
+                  <LinkContainer to="/projects/knitpickr">
+                    <Nav.Link
+                      eventKey="knitpickr"
+                      href="portfolio-site/src/projects/Knitpickr.js"
+                    >
+                      <Card.Title>Knitpickr</Card.Title>
+                    </Nav.Link>
+                  </LinkContainer>
                 </Card.ImgOverlay>
               </Card>
             </Col>
@@ -73,6 +85,31 @@ class HomePage extends Component {
             </Col>
           </Row>
         </CardGroup>
+
+        {/* Main Section: */}
+
+        {/* <Col sm={9}>
+          <Tab.Content id="margin-box">
+            <Tab.Pane eventKey="knitpickr">
+              <Knitpickr />
+            </Tab.Pane>
+
+            {/* <Tab.Pane eventKey="about">
+              <About />
+            </Tab.Pane>
+
+            <Tab.Pane eventKey="projects">
+              <ProjectsPage />
+            </Tab.Pane>
+
+            <Tab.Pane eventKey="resume">
+              <ResumePage />
+            </Tab.Pane>
+            <Tab.Pane eventKey="contact">
+              <ContactPage />
+            </Tab.Pane> */}
+        {/* </Tab.Content> */}
+        {/* </Col> */}
       </Container>
     );
   }
