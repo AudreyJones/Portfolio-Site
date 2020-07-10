@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { BrowserRouter as Router } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "./App.css";
 import HomePage from "./containers/HomePage.js";
 import About from "./containers/About.js";
@@ -63,20 +63,27 @@ class App extends Component {
             <Col sm={9}>
               <Tab.Content id="margin-box">
                 <Tab.Pane eventKey="home">
-                  <HomePage />
+                  <Switch>
+                    <Route path="/projects/knitpickr">
+                      <Knitpickr />
+                    </Route>
+                    <Route path="/projects">
+                      <ProjectsPage />
+                    </Route>
+                    <Route path="/">
+                      <HomePage />
+                    </Route>
+                    <Route path="/home">
+                      <HomePage />
+                    </Route>
+                  </Switch>
                 </Tab.Pane>
-
-                {/* <Tab.Pane eventKey="knitpickr">
-                  <Knitpickr />
-                </Tab.Pane> */}
 
                 <Tab.Pane eventKey="about">
                   <About />
                 </Tab.Pane>
 
-                <Tab.Pane eventKey="projects">
-                  <ProjectsPage />
-                </Tab.Pane>
+                <Tab.Pane eventKey="projects"></Tab.Pane>
 
                 <Tab.Pane eventKey="resume">
                   <ResumePage />

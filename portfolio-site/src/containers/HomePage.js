@@ -12,6 +12,7 @@ import {
   Container,
 } from "react-bootstrap";
 import Logo from "../images/logo192.png";
+import Ocean from "../images/ocean.jpeg";
 import Knitpickr from "../projects/Knitpickr";
 
 class HomePage extends Component {
@@ -25,9 +26,9 @@ class HomePage extends Component {
 
         <CardGroup>
           <Row>
-            <Col sm>
+            <Col sm={2} md={4}>
               <Card className="project">
-                <Card.Img src={Logo} alt="Card image" />
+                <Card.Img src={Ocean} alt="Card image" />
                 <Card.ImgOverlay>
                   <LinkContainer to="/projects/knitpickr">
                     <Nav.Link
@@ -40,7 +41,7 @@ class HomePage extends Component {
                 </Card.ImgOverlay>
               </Card>
             </Col>
-            <Col sm>
+            <Col sm={2} md={4}>
               <Card className="project">
                 <Card.Img src={Logo} alt="Card image" />
                 <Card.ImgOverlay>
@@ -48,7 +49,7 @@ class HomePage extends Component {
                 </Card.ImgOverlay>
               </Card>
             </Col>
-            <Col sm>
+            <Col sm={2} md={4}>
               <Card className="project">
                 <Card.Img src={Logo} alt="Card image" />
                 <Card.ImgOverlay>

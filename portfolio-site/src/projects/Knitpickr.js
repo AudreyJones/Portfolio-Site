@@ -14,38 +14,10 @@ import AdventureApp from "../images/AdventureApp.png";
 
 class Knitpickr extends Component {
   render() {
+    console.log("Hello?");
     return (
       <Container fluid>
-        <Breadcrumb>
-          <Breadcrumb.Item href="portfolio-site/src/projects">
-            Projects
-          </Breadcrumb.Item>
-          <Breadcrumb.Item href="portfolio-site/src/projects/Knitpickr.js">
-            Knitpickr
-          </Breadcrumb.Item>
-        </Breadcrumb>
-        <Col sm={9}>
-          <Tab.Content id="margin-box">
-            <Tab.Pane eventKey="knitpickr">
-              <Knitpickr />
-            </Tab.Pane>
-
-            {/* <Tab.Pane eventKey="about">
-              <About />
-            </Tab.Pane>
-
-            <Tab.Pane eventKey="projects">
-              <ProjectsPage />
-            </Tab.Pane>
-
-            <Tab.Pane eventKey="resume">
-              <ResumePage />
-            </Tab.Pane>
-            <Tab.Pane eventKey="contact">
-              <ContactPage />
-            {/* </Tab.Pane> */}
-          </Tab.Content>
-        </Col>
+        <p>Hello?</p>
       </Container>
     );
   }
