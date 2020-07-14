@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import { Image, Breadcrumb, Container } from "react-bootstrap";
-import AdventureAppPic from "../images/AdventureApp.png";
+import CoffeeShopAppPic from "../images/CoffeeShop.jpg";
 
-class AdventureApp extends Component {
+class CoffeeShopApp extends Component {
   render() {
     return (
       <Container fluid>
@@ -10,13 +10,13 @@ class AdventureApp extends Component {
           <Breadcrumb.Item href="../containers/HomePage.js">
             Home
           </Breadcrumb.Item>
-          <Breadcrumb.Item active>AdventureApp</Breadcrumb.Item>
+          <Breadcrumb.Item active>CoffeeShopApp</Breadcrumb.Item>
         </Breadcrumb>
-        <Image src={AdventureAppPic} fluid></Image>
+        <Image src={CoffeeShopAppPic} fluid></Image>
         <p>Go on an adventure starring you as the hero!</p>
       </Container>
     );
   }
 }
 
-export default AdventureApp;
+export default CoffeeShopApp;

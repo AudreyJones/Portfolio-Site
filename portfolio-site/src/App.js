@@ -6,11 +6,15 @@ import About from "./containers/About.js";
 import ProjectsPage from "./containers/ProjectsPage.js";
 import ContactPage from "./containers/ContactPage.js";
 import ResumePage from "./containers/ResumePage.js";
-import Knitpickr from "./projects/Knitpickr";
+
 import { Nav, Tab, Row, Col, Container } from "react-bootstrap";
 import { LinkContainer } from "react-router-bootstrap";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import AdventureApp from "./projects/AdventureApp";
+import Knitpickr from "./projects/Knitpickr";
+import CoffeeShopApp from "./projects/CoffeeShopApp";
+import NintendoCLIGem from "./projects/Nintendo CLI Gem.js";
 
 class App extends Component {
   render() {
@@ -67,12 +71,27 @@ class App extends Component {
                     <Route path="/projects/knitpickr">
                       <Knitpickr />
                     </Route>
+
+                    <Route path="/projects/adventureapp">
+                      <AdventureApp />
+                    </Route>
+
+                    <Route path="/projects/coffeeshopApp">
+                      <CoffeeShopApp />
+                    </Route>
+
+                    <Route path="/projects/nintendocligem">
+                      <NintendoCLIGem />
+                    </Route>
+
                     <Route path="/projects">
                       <ProjectsPage />
                     </Route>
+
                     <Route path="/">
                       <HomePage />
                     </Route>
+
                     <Route path="/home">
                       <HomePage />
                     </Route>
