@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import { Image, Breadcrumb, Container } from "react-bootstrap";
-import KnitpickrPic from "../images/Knitpickr.png";
+import AdventureApp from "../images/AdventureApp.png";
 
-class Knitpickr extends Component {
+class AdventureApp extends Component {
   render() {
     console.log("Hello?");
     return (
@@ -10,13 +10,13 @@ class Knitpickr extends Component {
         <Breadcrumb>
           <Breadcrumb.Item href="#">Home</Breadcrumb.Item>
           <Breadcrumb.Item href="#">Projects</Breadcrumb.Item>
-          <Breadcrumb.Item active>Knitpickr</Breadcrumb.Item>
+          <Breadcrumb.Item active>AdventureApp</Breadcrumb.Item>
         </Breadcrumb>
-        <Image src={KnitpickrPic} fluid></Image>
-        <p>Hello?</p>
+        <Image src={AdventureApp} fluid></Image>
+        <p>Adventure App Description</p>
       </Container>
     );
   }
 }
 
-export default Knitpickr;
+export default AdventureApp;

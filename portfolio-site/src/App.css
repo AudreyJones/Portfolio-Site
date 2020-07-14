@@ -56,6 +56,11 @@ div.jumbotron {
   color: #4d4d4d;
 }
 
+ol.breadcrumb {
+  background-color: #defff7;
+  color: #4d4d4d;
+}
+
 .card-group {
   display: flex;
   margin: 0 auto;
