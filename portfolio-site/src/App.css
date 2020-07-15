@@ -13,6 +13,7 @@ body {
 .container-fluid {
   background-color: #defff7;
   color: #4d4d4d;
+  border-radius: 10px;
 }
 
 .img-fluid {
@@ -71,8 +72,6 @@ ol.breadcrumb {
 
 .card {
   margin: 2%;
-  /* padding: 5%; */
-  border: none;
 }
 
 .card-img-overlay {
@@ -95,6 +94,7 @@ ol.breadcrumb {
 
 .card-title {
   color: #4d4d4d;
+  font-size: larger;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -104,6 +104,18 @@ ol.breadcrumb {
 .nav-pills .nav-item .active.nav-link.active {
   background-color: #defff7;
   color: #4d4d4d;
+}
+
+.btn.btn-primary.btn-lg {
+  background-color: #defff7;
+  border: none;
+  color: #4d4d4d;
+  position: relative;
+  width: 50%;
+}
+
+.btn.btn-primary.btn-lg: :hover {
+  background-color: #4d4d4d;
 }
 
 div#margin-box {
