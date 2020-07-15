@@ -14,7 +14,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import AdventureApp from "./projects/AdventureApp";
 import Knitpickr from "./projects/Knitpickr";
 import CoffeeShopApp from "./projects/CoffeeShopApp";
-import NintendoCLIGem from "./projects/Nintendo CLI Gem.js";
 
 class App extends Component {
   render() {
@@ -78,10 +77,6 @@ class App extends Component {
 
                     <Route path="/projects/coffeeshopApp">
                       <CoffeeShopApp />
-                    </Route>
-
-                    <Route path="/projects/nintendocligem">
-                      <NintendoCLIGem />
                     </Route>
 
                     <Route path="/projects">

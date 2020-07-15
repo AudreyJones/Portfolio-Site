@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Image, Breadcrumb, Container } from "react-bootstrap";
+import { Image, Breadcrumb, Container, Button } from "react-bootstrap";
 import KnitpickrPic from "../images/Knitpickr.png";
 
 class Knitpickr extends Component {
@@ -13,12 +13,17 @@ class Knitpickr extends Component {
           <Breadcrumb.Item active>Knitpickr</Breadcrumb.Item>
         </Breadcrumb>
         <Image src={KnitpickrPic} fluid></Image>
+        <Button href="https://github.com/AudreyJones/Knitpickr.git">
+          Github
+        </Button>{" "}
+        <Button href="https://drive.google.com/file/d/1DPII7fs34gvMAXPCAtmpvkhdsUny02DY/view?usp=sharing">
+          Demo
+        </Button>{" "}
         <p>
-          Keep track of your crochet and knitting supplies stash with Knitpickr!
-          Store the necessary supplies (yarn, hooks, etc.) information with each
-          project. Add new supplies with the click of a button. A full-stack
-          application made with a Ruby on Rails API consumed by a React/Redux
-          front-end.
+          This web application uses a Ruby on Rails API backend, PostGreSQL
+          database, and a JavaScript-based React/Redux user interface to track
+          projects and materials needed for a user’s yarn crafts projects
+          (knitting, crochet, and macrame).
         </p>
       </Container>
     );

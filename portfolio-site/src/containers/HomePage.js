@@ -9,11 +9,9 @@ import {
   Col,
   Container,
 } from "react-bootstrap";
-import Logo from "../images/logo192.png";
 import KnitpickrPic from "../images/Knitpickr.png";
 import AdventureAppPic from "../images/AdventureApp.png";
 import CoffeeShopPic from "../images/CoffeeShop.jpg";
-import NintendoSitePic from "../images/Nintendo Top-Selling Games.png";
 
 class HomePage extends Component {
   render() {
@@ -26,7 +24,7 @@ class HomePage extends Component {
 
         <CardGroup>
           <Row>
-            <Col sm={2} md={4}>
+            <Col>
               <Card className="project">
                 <Card.Img src={KnitpickrPic} alt="Card image" />
                 <Card.ImgOverlay>
@@ -41,7 +39,9 @@ class HomePage extends Component {
                 </Card.ImgOverlay>
               </Card>
             </Col>
-            <Col sm={2} md={4}>
+          </Row>
+          <Row>
+            <Col>
               <Card className="project">
                 <Card.Img src={AdventureAppPic} alt="Card image" />
                 <Card.ImgOverlay>
@@ -56,7 +56,9 @@ class HomePage extends Component {
                 </Card.ImgOverlay>
               </Card>
             </Col>
-            <Col sm={2} md={4}>
+          </Row>
+          <Row>
+            <Col>
               <Card className="project">
                 <Card.Img src={CoffeeShopPic} alt="Card image" />
                 <Card.ImgOverlay>
@@ -72,9 +74,8 @@ class HomePage extends Component {
               </Card>
             </Col>
           </Row>
-          <Row> </Row>
-          <Row>
-            <Col>
+          {/* <Row> */}
+          {/* <Col>
               <Card className="project">
                 <Card.Img src={NintendoSitePic} alt="Card image" />
                 <Card.ImgOverlay>
@@ -90,8 +91,8 @@ class HomePage extends Component {
                   </LinkContainer>
                 </Card.ImgOverlay>
               </Card>
-            </Col>
-            <Col>
+            </Col> */}
+          {/* <Col>
               <Card className="project">
                 <Card.Img src={Logo} alt="Card image" />
                 <Card.ImgOverlay>
@@ -106,8 +107,8 @@ class HomePage extends Component {
                   <Card.Title>Project B</Card.Title>
                 </Card.ImgOverlay>
               </Card>
-            </Col>
-          </Row>
+            </Col> */}
+          {/* </Row> */}
         </CardGroup>
       </Container>
     );

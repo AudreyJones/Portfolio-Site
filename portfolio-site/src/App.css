@@ -66,6 +66,13 @@ ol.breadcrumb {
   margin: 0 auto;
   width: 900px;
   justify-content: space-between;
+  padding: 5%;
+}
+
+.card {
+  margin: 2%;
+  /* padding: 5%; */
+  border: none;
 }
 
 .card-img-overlay {
