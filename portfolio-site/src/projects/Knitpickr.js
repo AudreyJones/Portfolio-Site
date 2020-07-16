@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Image, Breadcrumb, Container, Button } from "react-bootstrap";
+import { Image, Breadcrumb, Container, Button, Row } from "react-bootstrap";
 import KnitpickrPic from "../images/Knitpickr.png";
 
 class Knitpickr extends Component {
@@ -13,12 +13,22 @@ class Knitpickr extends Component {
           <Breadcrumb.Item active>Knitpickr</Breadcrumb.Item>
         </Breadcrumb>
         <Image src={KnitpickrPic} fluid></Image>
-        <Button href="https://github.com/AudreyJones/Knitpickr.git">
-          Github
-        </Button>{" "}
-        <Button href="https://drive.google.com/file/d/1DPII7fs34gvMAXPCAtmpvkhdsUny02DY/view?usp=sharing">
-          Demo
-        </Button>{" "}
+        <Row>
+          <Button
+            href="https://github.com/AudreyJones/Knitpickr.git"
+            size="lg"
+            class="project-link"
+          >
+            Github
+          </Button>{" "}
+          <Button
+            href="https://drive.google.com/file/d/1DPII7fs34gvMAXPCAtmpvkhdsUny02DY/view?usp=sharing"
+            size="lg"
+            class="project-link"
+          >
+            Demo
+          </Button>
+        </Row>{" "}
         <p>
           This web application uses a Ruby on Rails API backend, PostGreSQL
           database, and a JavaScript-based React/Redux user interface to track

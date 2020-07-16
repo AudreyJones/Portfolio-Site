@@ -1,12 +1,5 @@
 import React, { Component } from "react";
-import {
-  Image,
-  Breadcrumb,
-  Container,
-  Button,
-  Col,
-  Row,
-} from "react-bootstrap";
+import { Image, Breadcrumb, Container, Button, Row } from "react-bootstrap";
 import CoffeeShopAppPic from "../images/CoffeeShop.jpg";
 
 class CoffeeShopApp extends Component {

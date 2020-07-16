@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Image, Breadcrumb, Container, Button } from "react-bootstrap";
+import { Image, Breadcrumb, Container, Button, Row } from "react-bootstrap";
 import AdventureAppPic from "../images/AdventureApp.png";
 
 class AdventureApp extends Component {
@@ -13,12 +13,22 @@ class AdventureApp extends Component {
           <Breadcrumb.Item active>AdventureApp</Breadcrumb.Item>
         </Breadcrumb>
         <Image src={AdventureAppPic} fluid></Image>
-        <Button href="https://github.com/AudreyJones/AdventureApp.git">
-          Github
-        </Button>{" "}
-        <Button href="https://drive.google.com/file/d/13gx3bBUHfwG9fdbiFKC6D6xIVqTMNPia/view?usp=sharing">
-          Demo
-        </Button>{" "}
+        <Row>
+          <Button
+            href="https://github.com/AudreyJones/AdventureApp.git"
+            size="lg"
+            class="project-link"
+          >
+            Github
+          </Button>{" "}
+          <Button
+            href="https://drive.google.com/file/d/13gx3bBUHfwG9fdbiFKC6D6xIVqTMNPia/view?usp=sharing"
+            size="lg"
+            class="project-link"
+          >
+            Demo
+          </Button>
+        </Row>{" "}
         <p>
           This Rails web app allows users to go on an adventure, starring as the
           hero. Create, edit, update, and delete adventures featuring villains
